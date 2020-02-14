@@ -5,7 +5,7 @@ import styled from 'styled-components/macro';
 
 const Img = styled.img`
   max-width: 100%; 
-  display:block; 
+  display: block; 
   height: auto;
 `;
 
