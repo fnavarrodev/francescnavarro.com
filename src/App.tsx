@@ -21,7 +21,7 @@ const App = () => {
         &nbsp;
         <a href={'https://github.com/fnavarrodev'}><Icon icon={'github'} is-large /></a>
         &nbsp;
-        <a href={'https://linkedin.com/fnavarrodeveloper'}><Icon icon={'linkedin'} is-large /></a>
+        <a href={'https://www.linkedin.com/in/fnavarrodeveloper'}><Icon icon={'linkedin'} is-large /></a>
         &nbsp;
       </Container>
     </div>
