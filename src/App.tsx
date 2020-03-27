@@ -3,6 +3,15 @@ import fnavarroGif from './img/fnavarro8bit.gif';
 import { Container, Icon } from "nes-react";
 import styled from 'styled-components/macro';
 
+
+const CustomContainer = styled(Container)`
+  margin: 24px;
+  @media (max-width: 767px) {
+    height: 100vh;
+    margin: 4px;
+  }
+`;
+
 const Img = styled.img`
   max-width: 100%; 
   display: block; 
@@ -42,10 +51,20 @@ const Column = styled.div`
   }
 `;
 
+const Kirby = styled.div`
+  position: relative;
+`;
+
+const Balloon = styled.div`
+  position: absolute;
+  left: 70px;
+  top: -39px;
+`;
+
 const App = () => {
   return (
     <div className="App">
-      <Container>
+      <CustomContainer>
         <Wrapper>
           <HeadingImage>
             <Row>
@@ -53,22 +72,27 @@ const App = () => {
                 <Img src={fnavarroGif} alt="Francesc Navarro" />
               </Column>
               <Column>
+                <Kirby>
+                  <i className={"nes-kirby is-small"} />
+                  <Balloon className={"nes-balloon from-left nes-pointer"}>
+                    Hi there!
+                  </Balloon>
+                </Kirby>
                 <h1>Francesc Navarro</h1>
-                <br />
                 <h2>Senior FrontEnd Engineer</h2>
+                <SocialLinks>
+                  <a href={'https://twitter.com/bantidisturbis'}><Icon icon={'twitter'} is-large /></a>
+                  &nbsp;
+                  <a href={'https://github.com/fnavarrodev'}><Icon icon={'github'} is-large /></a>
+                  &nbsp;
+                  <a href={'https://www.linkedin.com/in/fnavarrodeveloper'}><Icon icon={'linkedin'} is-large /></a>
+                  &nbsp;
+                </SocialLinks>
               </Column>
             </Row>
           </HeadingImage>
-          <SocialLinks>
-            <a href={'https://twitter.com/bantidisturbis'}><Icon icon={'twitter'} is-large /></a>
-            &nbsp;
-            <a href={'https://github.com/fnavarrodev'}><Icon icon={'github'} is-large /></a>
-            &nbsp;
-            <a href={'https://www.linkedin.com/in/fnavarrodeveloper'}><Icon icon={'linkedin'} is-large /></a>
-            &nbsp;
-        </SocialLinks>
         </Wrapper>
-      </Container>
+      </CustomContainer>
     </div>
   );
 }
