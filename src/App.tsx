@@ -7,7 +7,7 @@ import styled from 'styled-components/macro';
 const CustomContainer = styled(Container)`
   margin: 24px;
   @media (max-width: 767px) {
-    height: 100vh;
+    height: 90vh;
     margin: 4px;
   }
 `;
@@ -61,6 +61,18 @@ const Balloon = styled.div`
   top: -39px;
 `;
 
+const ColumnImage = styled(Column)`
+  border: 1px solid #2a2a2a;
+  padding: 0;
+`;
+
+const ColumnDescription = styled(Column)`
+  margin-top: 35px;
+  h1,h2{
+    margin: 16px 0;
+  }
+`;
+
 const App = () => {
   return (
     <div className="App">
@@ -68,10 +80,10 @@ const App = () => {
         <Wrapper>
           <HeadingImage>
             <Row>
-              <Column>
+              <ColumnImage>
                 <Img src={fnavarroGif} alt="Francesc Navarro" />
-              </Column>
-              <Column>
+              </ColumnImage>
+              <ColumnDescription>
                 <Kirby>
                   <i className={"nes-kirby is-small"} />
                   <Balloon className={"nes-balloon from-left nes-pointer"}>
@@ -88,7 +100,7 @@ const App = () => {
                   <a href={'https://www.linkedin.com/in/fnavarrodeveloper'}><Icon icon={'linkedin'} is-large /></a>
                   &nbsp;
                 </SocialLinks>
-              </Column>
+              </ColumnDescription>
             </Row>
           </HeadingImage>
         </Wrapper>
