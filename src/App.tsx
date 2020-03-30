@@ -7,7 +7,6 @@ import styled from 'styled-components/macro';
 const CustomContainer = styled(Container)`
   margin: 24px;
   @media (max-width: 767px) {
-    height: 90vh;
     margin: 4px;
   }
 `;
