@@ -1,5 +1,5 @@
 import React from 'react';
-import fnavarroGif from './img/fnavarro8bit.gif';
+import fnavarroGif from './img/fnavarro8bit.png';
 import { Container, Icon } from "nes-react";
 import styled from 'styled-components/macro';
 
@@ -20,7 +20,6 @@ const Img = styled.img`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
 `;
 
