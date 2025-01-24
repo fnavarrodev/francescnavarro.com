@@ -91,7 +91,7 @@ const App = () => {
                 <h1>Francesc Navarro</h1>
                 <h2>Senior FrontEnd Engineer</h2>
                 <SocialLinks>
-                  <a href={'https://twitter.com/bantidisturbis'}><Icon icon={'twitter'} is-large /></a>
+                  <a href={'https://bsky.app/profile/fnavarrodev.bsky.social'}><Icon icon={'twitter'} is-large /></a>
                   &nbsp;
                   <a href={'https://github.com/fnavarrodev'}><Icon icon={'github'} is-large /></a>
                   &nbsp;
