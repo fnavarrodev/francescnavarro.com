@@ -1,14 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import { Moon, Sun, Github, Linkedin, Twitter } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Moon, Sun, Github, Linkedin, Twitter } from "lucide-react";
+import fnavarroImage from "./fnavarro8bit.png";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     if (darkMode) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
 
@@ -34,22 +35,32 @@ function App() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80"
+              src={fnavarroImage}
               alt="Workspace with laptop and coffee"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="space-y-6">
             <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-white">
-              Welcome to Our Digital Space
+              Francesc Navarro
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              We create innovative solutions that bridge the gap between imagination and reality. 
-              Our passion lies in crafting digital experiences that not only meet but exceed expectations.
+              Hi there! I’m a Frontend Developer and Staff Engineer at
+              Innovamat, where I turn complex problems into smooth,
+              user-friendly web experiences. I specialize in React, TypeScript,
+              and React Query, making sure everything runs fast, looks great,
+              and doesn’t break (too often). From crafting intuitive UIs to
+              optimizing performance, I love building products that feel
+              effortless to use.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-              With years of experience in software development and design, 
-              we bring your ideas to life with cutting-edge technology and creative excellence.
+              When I’m not wrangling JavaScript or taming a monorepo, I’m
+              mentoring teammates, fine-tuning deployment pipelines with
+              Terraform and AWS, and making sure our apps don’t crash at the
+              worst possible moment. I believe in clean code, solid
+              architecture, and a dash of humor to keep things interesting. If
+              you need someone who can build, debug, and maybe sneak in an
+              Easter egg or two, you’re in the right place!
             </p>
           </div>
         </div>
@@ -60,7 +71,7 @@ function App() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex justify-center space-x-6">
             <a
-              href="https://twitter.com"
+              href="https://bsky.app/profile/fnavarrodev.bsky.social"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
@@ -69,7 +80,7 @@ function App() {
               <Twitter className="w-6 h-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/fnavarrodeveloper/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-600 transition-colors"
@@ -78,7 +89,7 @@ function App() {
               <Linkedin className="w-6 h-6" />
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/fnavarrodev"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white transition-colors"
